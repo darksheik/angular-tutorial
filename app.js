@@ -18,4 +18,8 @@ $scope.addPost = function(){
   $scope.posts.push({title: $scope.title, upvotes: 0});
 };
 
+$scope.incrementUpvotes = function(post) {
+  post.upvotes += 1;
+};
+
 }]);
